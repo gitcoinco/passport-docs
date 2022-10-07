@@ -9,7 +9,7 @@ description: >-
 
 The Passport project is only useful if there are places that accept your passport and read it!
 
-The Gitcoin Passport provides an example reader application to help you get started, check that out at https://example-passport-reader.gitcoin.co and the repo for that at [https://github.com/gitcoinco/passport-reader/](https://github.com/gitcoinco/passport-reader/)
+The Gitcoin Passport provides an example reader application to help you get started, check that out at https://small-wildflower-1369.on.fleek.co/ and the repo for that at [passport-sdk reader example](https://github.com/farque65/passport-reader-example)
 
 Gitcoin also integrates the passport to power the Gitcoin Trust Bonus, the Trust Bonus flow is available on your profile, or once logged in, visit [https://gitcoin.co/trust](https://gitcoin.co/trust)
 
