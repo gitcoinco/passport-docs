@@ -23,7 +23,7 @@ Upon arriving at this app, the user is prompted to connect their passport. The u
 
 The app then attempts to fetch the Passport data from Ceramic.&#x20;
 
-* If no passport is found, the user can be informed to create their passport on a frontend such as [passport.gitcoin.co ](https://passport.gitcion.co)
+* If no passport is found, the user can be informed to create their passport on a frontend such as [passport.gitcoin.co ](https://passport.gitcoin.co)
 *   If a passport is found, the app can read and score the passport. If the user's passport holds the set of stamps required by the app the flow is over and the user can continue on and safely participate in the app’s ecosystem. If not, the user can be prompted to add any additional stamps to their passport before continuing
 
     ####
