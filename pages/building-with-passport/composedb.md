@@ -50,7 +50,7 @@ Here's what a Stamp looks like in JSON format:
 
 and here is what it looks like to create this object in a ComposeDB database:
 
-```bash
+```GraphQL
 type GitcoinPassportStamp implements VerifiableCredential
   @createModel(
     accountRelation: LIST
@@ -71,6 +71,8 @@ type GitcoinPassportStamp implements VerifiableCredential
 }
 ```
 
+You'll notice that the ComposeDB schema definition above uses embedded types and an interface. For brevity we've omitted those above, but you can observe the schema definitions in their entirety in our [passportStamps.graphql](https://github.com/gitcoinco/passport/blob/main/schemas/models/passportStamps.graphql) document.
+
 The fields are as follows:
 - `type`: Passport Stamps are always `VerifiableCredentials`
 - `context`: an array of strings with lengths between 1 and 1024 bytes to store links to the specifications for verifiable credentials and the Passport credential.
@@ -84,8 +86,34 @@ The fields are as follows:
   - `context`: A string of lenghth 1 - to 1024 bytes for storing additional information about the Stamp.
 - `proof`: A hash demonstrating that the Stampo was really attested by a provider.
 
+### Syncing Passport Data with Your Ceramic Node
 
+If you already have a ComposeDB node and you would like to sync and collaborate on passport data based on the same definitions, you will need to use the same [ComposeDB composite](https://github.com/gitcoinco/passport/blob/main/schemas/composites/gitcoin-passport-stamps-composite.json) already deployed onto the Passport ComposeDB node (in order to ensure the same data model references are synced). 
 
+We've put together a simple [repository](https://github.com/ceramicstudio/composite-deploy-boilerplate/tree/passport) containing a script that automates this for you. 
+
+First, clone the repository and install your dependencies:
+
+```bash
+git clone https://github.com/passport/eventual-repository-location && cd eventual-repository-location && npm install
+```
+
+This repository has already been pre-loaded with the correct [composite definition](https://github.com/ceramicstudio/composite-deploy-boilerplate/blob/passport/definition.json), so you do not need to edit your definition files.
+
+Next, follow step #2 in the README (which shows how to enter your node endpoint and corresponding admin seed as arguments).
+
+Finally, go ahead and deploy:
+
+```bash
+nvm use 20
+npm run deploy
+```
+
+Congratulations! Your ComposeDB node is now indexing on the same passport data models. 
+
+Finally, in order to run mutations and read queries against your node corresponding to the passport schema, don't forget to use your [JavaScript Runtime Definition](https://github.com/gitcoinco/passport/blob/main/schemas/src/definitions/ts/gitcoin-passport-stamps.ts) when casting these definitions onto your application's ComposeDB client.
+
+For more information about how this works, visit the [ComposeDB examples](https://developers.ceramic.network/docs/composedb/examples/tutorials-and-examples) documentation, or get in touch with the Ceramic team on their [Official Forum](https://forum.ceramic.network/).
 
 Here's an example of a query to retrieve 10 Passport Stamps. Users familiar with GraphQL will recognize the syntax.
 
