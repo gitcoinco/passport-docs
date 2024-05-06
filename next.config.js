@@ -9,248 +9,296 @@ module.exports = withNextra({
     redirects: () => [
         {
             source: '/get-started/creating-your-passport',
-            destination: 'https://support.gitcoin.co/gitcoin-knowledge-base/gitcoin-passport/creating-your-passport',
+            destination: 'https://support.passport.xyz/passport-knowledge-base/creating-a-gitcoin-passport',
             permanent: true,
             basePath: false
         },
         {
             source: '/overview/creating-your-passport',
-            destination: 'https://support.gitcoin.co/gitcoin-knowledge-base/gitcoin-passport/creating-your-passport',
+            destination: 'https://support.passport.xyz/passport-knowledge-base/creating-a-gitcoin-passport',
             permanent: true,
             basePath: false
         },
         {
             source: '/get-started/collecting-stamps',
-            destination: 'https://support.gitcoin.co/gitcoin-knowledge-base/gitcoin-passport/what-are-stamps',
+            destination: 'https://support.passport.xyz/passport-knowledge-base/gitcoin-passport/what-are-stamps',
             permanent: true,
             basePath: false
         },
         {
             source: '/get-started/presenting-your-passport',
-            destination: 'https://support.gitcoin.co/gitcoin-knowledge-base/gitcoin-passport/presenting-your-passport',
+            destination: 'https://support.passport.xyz/passport-knowledge-base/gitcoin-passport/presenting-your-passport',
             permanent: true,
             basePath: false
         },
         {
             source: '/get-started/faq',
-            destination: 'https://support.gitcoin.co/gitcoin-knowledge-base/gitcoin-passport/common-questions',
+            destination: 'https://support.passport.xyz/passport-knowledge-base/gitcoin-passport/common-questions',
             permanent: true,
             basePath: false
         },
         {
             source: '/overview/introducing-gitcoin-passport',
-            destination: '/',
-            permanent: true
+            destination: 'https://docs.passport.xyz/',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/overview/readme',
-            destination: '/',
-            permanent: true
+            destination: 'https://docs.passport.xyz/',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/overview/presenting-your-passport',
-            destination: '/',
-            permanent: true
+            destination: 'https://docs.passport.xyz/',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/overview/overview',
-            destination: '/overview/why-gitcoin-passport',
-            permanent: true
+            destination: 'https://docs.passport.xyz/overview/why-gitcoin-passport',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/overview/when-to-use-gitcoin-passport',
-            destination: '/overview/use-cases',
-            permanent: true
+            destination: 'https://docs.passport.xyz/overview/use-cases',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/major-concepts',
-            destination: '/overview/key-terms',
-            permanent: true
+            destination: 'https://docs.passport.xyz/overview/key-terms',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/how-it-works',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/get-started/how-it-works',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/scorer-api',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/scorer-api/api-access',
-            destination: '/building-with-passport/passport-api/getting-access',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/getting-access',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/quick-start',
-            destination: '/building-with-passport/passport-api/quick-start-guide',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/quick-start-guide',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides',
-            destination: '/building-with-passport/passport-api/tutorials',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides/gating-access-with-passport-scores',
-            destination: '/building-with-passport/passport-api/tutorials/gating-access-with-passport-scores',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/gating-access-with-passport-scores',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides/integrating-stamps-and-scorers',
-            destination: '/building-with-passport/passport-api/tutorials/integrating-stamps-and-scorers',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/integrating-stamps-and-scorers',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides/working-with-stamp-metadata',
-            destination: '/building-with-passport/passport-api/tutorials/working-with-stamp-metadata',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/working-with-stamp-metadata',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides/requiring-a-passport-score-for-airdrop-claim',
-            destination: '/building-with-passport/passport-api/tutorials/requiring-a-passport-score-for-airdrop-claim',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/requiring-a-passport-score-for-airdrop-claim',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/integration-guides/integrating-onchain-stamp-data',
-            destination: '/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/integrating-onchain-stamp-data',
-            destination: '/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/scorer-api/status-and-error-codes',
-            destination: '/building-with-passport/passport-api/status-and-error-codes',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/status-and-error-codes',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/scorer-api/reading-passport-stamps',
-            destination: '/building-with-passport/passport-api/data-dictionary',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/data-dictionary',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/scorer-api/endpoint-definition',
-            destination: '/building-with-passport/passport-api/api-reference',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/api-reference',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/passport-sdk-deprecated',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/passport-sdk-deprecated/getting-started',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/passport-sdk-deprecated/integrating-passport-in-your-dapp',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/case-studies/bankless-academy',
-            destination: '/use-cases',
-            permanent: true
+            destination: 'https://docs.passport.xyz/use-cases',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport',
-            destination: '/building-with-passport/introduction',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/introduction',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/getting-access',
-            destination: '/building-with-passport/passport-api/getting-access',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/getting-access',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/quick-start-guide',
-            destination: '/building-with-passport/passport-api/quick-start-guide',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/quick-start-guide',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/api-reference',
-            destination: '/building-with-passport/passport-api/api-reference',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/api-reference',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/major-concepts/data-dictionary',
-            destination: '/building-with-passport/passport-api/data-dictionary',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/data-dictionary',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/data-dictionary',
-            destination: '/building-with-passport/passport-api/data-dictionary',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/data-dictionary',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/major-concepts/status-and-error-codes',
-            destination: '/building-with-passport/passport-api/status-and-error-codes',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/status-and-error-codes',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/major-concepts/onchain-passports',
-            destination: '/building-with-passport/smart-contracts/overview',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/overview',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/contract-reference',
-            destination: '/building-with-passport/smart-contracts/contract-reference',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/contract-reference',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/attestation-schema',
-            destination: '/building-with-passport/smart-contracts/attestation-schema',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/attestation-schema',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/major-concepts/platform-integrator-concepts',
-            destination: '/building-with-passport/major-concepts/educating-users',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/major-concepts/educating-users',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials',
-            destination: '/building-with-passport/passport-api/tutorials',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/client-side-scoring',
-            destination: '/building-with-passport/passport-api/tutorials/client-side-scoring',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/client-side-scoring',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/gating-access-with-passport-scores',
-            destination: '/building-with-passport/passport-api/tutorials/gating-access-with-passport-scores',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/gating-access-with-passport-scores',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/integrating-stamps-and-scores',
-            destination: '/building-with-passport/passport-api/tutorials/integrating-stamps-and-scores',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/integrating-stamps-and-scores',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/requiring-a-passport-score-for-airdrop-claim',
-            destination: '/building-with-passport/passport-api/tutorials/requiring-a-passport-score-for-airdrop-claim',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/requiring-a-passport-score-for-airdrop-claim',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/working-with-stamp-metadata',
-            destination: '/building-with-passport/passport-api/tutorials/working-with-stamp-metadata',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/passport-api/tutorials/working-with-stamp-metadata',
+            permanent: true,
+            basePath: false
         },
         {
             source: '/building-with-passport/tutorials/integrating-onchain-stamp-data',
-            destination: '/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
-            permanent: true
+            destination: 'https://docs.passport.xyz/building-with-passport/smart-contracts/integrating-onchain-stamp-data',
+            permanent: true,
+            basePath: false
         },
+        {
+            source: '/:path*',
+            destination: 'https://docs.passport.xyz/:path*',
+            permanent: true,
+        }    
     ]
 })
